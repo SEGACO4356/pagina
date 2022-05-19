@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Percusión</title>
+</head>
+<link rel="stylesheet" href="percusion.css">
+<body>
+  <center>
+    <div class="box">
+  <h1>La percusión</h1>
+</div>
+
+  <h2>Para los demás musicos es fácil hablar y pedir un buen ritmo, pero solo nosotros sabemos cuan dificil es hacer lo que para los demás músicos solo son palabras</h2>
+  <h2>Cuando pensamos en percusión indemiatamende se nos viene a la cabeza instrumentos tales como, baterias, timbales, tambores, congas, campanas etc...</h2>
+  <button type="button" class="button" onclick="Mostrar_bateria();">Batería</button>
+  <div id="bateria">
+  <img class="imagen1" src="./imagenes/baterias.webp" alt="">
+  <h3>La batería es un conjunto de instrumentos musicales de percusión usado por muchas agrupaciones musicales. En algunos países, el término «batería» también se refiere al músico que toca estos instrumentos, al igual que el término «baterista», ambos equivalentes.</h3>
+  <a href="javascript:void(0)" onclick="Ocultar_bateria();">Ocultar</a>
+  </div>
+  <button type="button" class="button" onclick="Mostrar_timbales();">Timbales</button>
+  <div id="timbal">
+    <img class="imagen2" src="./imagenes/timbal.jpg" alt="">
+<h3>Los timbales, timbaletas, pailas, tarolas tropicales, minitoms o minitarolas, son tambores cilíndricos, de un solo parche, con armazón de metal, más cortos que los tom toms, y afinados más agudos, que se pueden acompañar con percusión auxiliar, estos instrumentos son indispensables a la hora de formar alguna orquesta de música bailable, ya que son los que llevan casi toda la base ritmica, se puede improvisar en el timbal, entonces por ello es un instrumento indispensable para cualquier orquesta</h3>
+<a href="javascript:void(0)" onclick="Ocultar_timbales();">Ocultar</a>
+  </div>
+  <button type="button" class="button" onclick="Mostrar_congas();">Congas</button>
+  <div id="congas">
+    <img src="./imagenes/congas.jpg" alt="">
+    <a href="javascript:void(0)" onclick="Ocultar_congas();">Ocultar</a>
+    <h3>La conga1​ o tumbadora es un instrumento membranófono de percusión de raíces africanas, que fue desarrollado en Cuba. Además de su importancia dentro de la percusión en la música afrocubana, la conga se convirtió en un instrumento fundamental en la interpretación de otros ritmos latinos como la salsa, el merengue y la timba cubana.</h3>
+  </div>
+  </center>
+
+</body>
+Visitas: <h2 id="visitas"></h2>
+<script>
+    let visitasActuales = localStorage.getItem("visitas");
+  if (visitasActuales){
+    let aumento = parseInt(visitasActuales) + 1;
+    document.getElementById("visitas").innerHTML = aumento;
+    localStorage.setItem("visitas", aumento);
+  }else{
+    localStorage.setItem("visitas", 1);
+    document.getElementById("visitas").innerHTML = 1;
+  }
+  function Mostrar_bateria(){
+    document.getElementById("bateria").style.display = 'block'
+  }
+  function Ocultar_bateria(){
+    document.getElementById("bateria").style.display = 'none'
+  }
+  function Mostrar_timbales(){
+    document.getElementById("timbal").style.display = 'block'
+  }
+  function Ocultar_timbales(){
+    document.getElementById("timbal").style.display = 'none'
+  }
+  function Mostrar_congas(){
+    document.getElementById("congas").style.display = 'block'
+  }
+  function Ocultar_congas(){
+    document.getElementById("congas").style.display = 'none'
+  }
+</script>
+</html>

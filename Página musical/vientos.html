@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vientos</title>
+</head>
+<link rel="stylesheet" href="vientos.css">
+
+<body>
+  <center>
+    <div>
+      <h2 class="box">Los vientos</h2>
+    </div>
+    <h2>Puede que la música entre por los oídos, pero va al corazón...</h2>
+    <h2>Cuando nos dicen vientos a la hora de hablar de música, tenemos presentes varios instrumentos que son pioneros a
+      la hora de hacer música, intrumentos tales como: Saxofones, trompetas, trombones, clarinetes</h2>
+
+    <button type="button" class="button" onclick="Mostrar_saxos();">Saxofones</button>
+    <div id="saxos">
+      <img class="imagen1" src="./imagenes/saxo.jpg" alt="">
+      <h3>El saxofón, también conocido como saxófono o simplemente saxo, es un instrumento musical cónico, de la familia de los instrumentos de viento-madera, generalmente hecho de latón, que consta de una boquilla con una caña simple al igual que el clarinete. Fue inventado por Adolphe Sax a principios de los años 1840.</h3>
+      <a href="javascript:void(0)" onclick="Ocultar_saxo();">Ocultar</a>
+    </div>
+    <button type="button" class="button" onclick="Mostrar_trompeta();">Trompetas</button>
+    <div id="trompetas">
+    <img class="imagen2" src="./imagenes/trompeta.jpg" alt="">
+    <h3>La trompeta es un instrumento musical de viento, que pertenece a la familia de los instrumentos de viento metal o metales, fabricado en aleación de metal. El sonido se produce gracias a la vibración de los labios del intérprete en la parte denominada boquilla a partir de la columna del aire.</h3>
+    <a href="javascript:void(0)" onclick="Ocultar_trompeta();">Ocultar</a>
+    </div>
+    <button type="button" class="button" onclick="Mostrar_clarinetes();">Clarinetes</button>
+    <div id="clarinete">
+        <img src="./imagenes/clarinete.webp" alt="">
+      <h3>El clarinete es un instrumento musical de la familia de los instrumentos de viento-madera que consta de una boquilla con caña simple. Dentro de la orquesta, se encuentra en la sección del viento-madera, junto a la flauta, el oboe, el saxofón y el fagot.</h3>
+<a href="javascript:void(0)" onclick="Ocultar_clarinete();">Ocultar</a>
+
+    </div>
+  </center>
+</body>
+Visitas: <h2 id="visitas"></h2>
+<script>
+    let visitasActuales = localStorage.getItem("visitas");
+  if (visitasActuales){
+    let aumento = parseInt(visitasActuales) + 1;
+    document.getElementById("visitas").innerHTML = aumento;
+    localStorage.setItem("visitas", aumento);
+  }else{
+    localStorage.setItem("visitas", 1);
+    document.getElementById("visitas").innerHTML = 1;
+  }
+  function Mostrar_saxos(){
+    document.getElementById("saxos").style.display = 'block'
+  }
+  function Ocultar_saxo(){
+    document.getElementById("saxos").style.display = 'none'
+  }
+  function Mostrar_trompeta(){
+    document.getElementById("trompetas").style.display = 'block'
+  }
+  function Ocultar_trompeta(){
+    document.getElementById("trompetas").style.display = 'none'
+  }
+  function Mostrar_clarinetes(){
+    document.getElementById("clarinete").style.display = 'block'
+  }
+  function Ocultar_clarinete(){
+    document.getElementById("clarinete").style.display = 'none'
+  }
+</script>
+</html>

@@ -1,0 +1,78 @@
+body{
+  background: url(imagenes/fondo2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ color: rgb(7, 7, 7);
+}
+.box {
+  background-color: rgba(175, 231, 240, 0.507);
+  border: 1px solid rgb(0, 0, 0);
+  
+} 
+
+
+.button {
+  display: inline-block;
+  padding: 5px 25px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #389ca0;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.imagen1{
+  padding: 20px;
+  width: 20%;
+  height: 20%;
+}
+.imagen2{
+  padding: 30px;
+  width: 35%;
+  height: 35%; 
+}
+.imagen3{
+  padding: 30px;
+  width: 20%;
+  height: 20%;
+}
+.imagen4{
+  padding: 30px;
+  width: 20%;
+  height: 20%;
+}
+#Guitarras{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#Bajos{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#Arpa{
+display: none;
+justify-content: center;
+align-items: center;
+}
+#visitas{
+  border: 1px solid ;
+  width: 70px;
+  text-align: center;
+}

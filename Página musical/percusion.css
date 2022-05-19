@@ -1,0 +1,69 @@
+body{
+  background: url(imagenes/fondo3.webp) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: azure;
+}
+.box{
+  background-color:rgba(253, 143, 0, 0.507);
+  width: 260px;
+  height: 80px;
+  border: 1px solid;
+  border-radius: 15px;
+}
+.button {
+  display: inline-block;
+  padding: 5px 25px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #a200ff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  
+}
+
+.button:hover {background-color: #ff0000}
+
+.button:active {
+  background-color: #e79ad7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.imagen1{
+  width: 500px;
+  height: 250px;
+  padding: 30px;
+}
+.imagen2{
+  width: 300px;
+  height: 250px;
+  padding: 30px;
+}
+#bateria{
+  display: none;
+  text-align: center;
+  justify-content: center;
+}
+#timbal{
+  display: none;
+  justify-content: center;
+  text-align: center;
+}
+#congas{
+  display: none;
+  text-align: center;
+  justify-content: center;
+  padding: 30px;
+}
+#visitas{
+border: 1px solid;
+width: 70px;
+text-align: center;
+}

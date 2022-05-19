@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página musical</title>
+</head>
+<link rel="stylesheet" href="pagina musical.css">
+<body>
+  <center>
+    <div class="box">
+      
+<h1>La música</h1>
+</div>
+<h2> "La música es la banda sonora de nuestras vidas"</h2>
+<div>
+<button class="button"><a target="_blank" href="http://127.0.0.1:5500/percusion.html">La percusión</a></button>
+<button class="button"><a target="_blank" href="http://127.0.0.1:5500/vientos.html">Los vientos</a></button>
+<button class="button"><a target="_blank" href="http://127.0.0.1:5500/Cuerdas.html">Las Cuerdas</a></button>
+</div>
+<br>
+<br>
+<h3>La música es una forma en la que podemos expresar sentimientos, pensamientos, nuestra creatividad a la hora de hacer alguna melodia,
+las personas que estan tocando algún instrumento, nos están expresando sentimientos, nos quieren decir algo, pero haciendo sonar algún instrumento en específico.
+<br>
+<img class="imagen1" src="./Musica.jpg" alt="">
+</h3>
+</center>
+Visitas: <h2 id="visitas"></h2>
+</body>
+<script>  
+  let visitasActuales = localStorage.getItem("visitas");
+  if (visitasActuales){
+    let aumento = parseInt(visitasActuales) + 1;
+    document.getElementById("visitas").innerHTML = aumento;
+    localStorage.setItem("visitas", aumento);
+  }else{
+    localStorage.setItem("visitas", 1);
+    document.getElementById("visitas").innerHTML = 1;
+  }
+</script>
+<!--  <script>alert("!Bienvenidos a mi primera página¡")</script>  -->
+</html>

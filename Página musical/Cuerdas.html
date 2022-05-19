@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuerdas</title>
+</head>
+<link rel="stylesheet" href="Cuerdas.css">
+
+<body>
+  <center>
+    <div class="box">
+      
+    <h1>Las Cuerdas</h1>
+    <h2><strong>"Tropecé mil veces con la misma cuerda y saqué una gran melodía"</strong></h2>
+    </div>
+    <h3>A la hora de hablar de cuerdas en música, se nos viene a la mente instrumnetos tales como:
+    Guitarras, Bajos, Violines etc...</h3>
+    <h3>Hay que tener en cuenta que las cuerdas son un elemento de suma importancia a la hora de componer cualquier pieza musical.</h3>
+    <h2>En algunas ocasiones estos instrumentos son los que llevan la melodía, ya sean las Guitarras, los bajos, las Arpas, tiples etc... se suelen usar mucho como melodía principal y como acompañamiento
+    para las voces...
+  </h2>
+    <button type="button" class="button" onclick="Mostrar_guitarras();">Guitarras</button>
+    <div id="Guitarras">
+    <img class="imagen1" src="./imagenes/Guitarras.jpg" alt="">
+    <h3>Las Guitarras son una de las piezas claves a la hora de hacer música, ella es nuestra compañera ideal para interpretar nuestras propias composiciones, no hay edad para tocarla; lo que se debe tener son ganas para tocarla y aprender,
+      es un instrumento que nos permite explorar un gran número de estilos músicales: blues, rock, pop, reggae, funk, punk, música clásica etc... </h3>
+    <a href="javascript:void(0)" onclick="Ocultar_guitarras();">Ocultar</a>
+    </div>
+    <button type="button" class="button" onclick="Mostrar_Bajos();">Bajos</button>
+    <div id="Bajos">
+      <img class="imagen2" src="./imagenes/Bajos.webp" alt="">
+      <h3>El bajo, en líneas generales, es un instrumento que reproduce los sonidos más graves del espectro sonoro de una canción. Al final,
+         su importancia en el compendio musical es que ejerce una armonía con el resto de instrumentos y sirve como base rítmica de una formación, junto, normalmente, con la batería</h3>
+      <a href="javascript:void(0)" onclick="Ocultar_bajos();">Ocultar</a>
+    </div>
+    <button type="button" class="button" onclick="Mostrar_arpas();"><A>Arpas</A></button>
+    <div id="Arpa">
+    <img class="imagen3" src="./imagenes/Arpas.jpg" alt="">
+    <h3>El arpa, uno de llos instrumentos más melódicos y más sensibles a la hora de hablar de piezas  de jazz, rock etc... 
+      Se utiliza en los llanos colombianos, para tocar joropos, en general música llanera.
+      Los compositores modernos utilizan el arpa con frecuencia porque los pedales de un arpa de concierto permiten toda clase de escalas y sonidos con efectos, aunque algunas piezas modernas requieren mucho uso del pedal.
+    </h3>
+    <a href="javascript:void(0)" onclick="Ocultar_arpa();">Ocultar</a>
+  </div>
+  
+  <h2>Por ahora esos son los que mas resaltan a mi parecer</h2>
+
+  </center>
+Visitas: <h2 id="visitas"></h2>
+</body>
+<script type="text/javascript">
+let visitasActuales = localStorage.getItem("visitas");
+if (visitasActuales){
+  let aumento = parseInt(visitasActuales) + 1;
+  document.getElementById("visitas").innerHTML = aumento;
+  localStorage.setItem ("visitas", aumento);
+}
+else{
+  localStorage.setItem("visitas", 1);
+  document.getElementById("visitas").innerHTML = 1;
+}
+  function Mostrar_guitarras(){
+    document.getElementById('Guitarras').style.display= 'block'
+  }
+  function Ocultar_guitarras(){
+    document.getElementById('Guitarras').style.display ='none'
+  }
+  function Mostrar_Bajos(){
+    document.getElementById('Bajos').style.display = 'block'
+  }
+  function Ocultar_bajos(){
+    document.getElementById('Bajos').style.display = 'none'
+  }
+  function Mostrar_arpas(){
+    document.getElementById('Arpa').style.display = 'block'
+  }
+  function Ocultar_arpa(){
+    document.getElementById('Arpa').style.display = 'none'
+  }
+</script>
+</html>

@@ -1,0 +1,69 @@
+body{
+  background: url(imagenes/fondo\ musical.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ color: azure;
+}
+.box{
+  background-color: rgb(61, 65, 19);
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.button {
+  display: inline-block;
+  padding: 5px 25px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #da8c43;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  
+}
+
+.button:hover {background-color: #8e8d3e}
+
+.button:active {
+  background-color: #ff7b00;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.imagen1{
+  padding: 50px;
+  width: 150px;
+  height: 250px;
+}
+.imagen2{
+  padding: 50px;
+  width: 350px;
+  height: 250px;
+}
+#saxos{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#trompetas{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#clarinete{
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#visitas{
+  border: 1px solid;
+  width: 70px;
+  text-align: center;
+}

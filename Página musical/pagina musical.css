@@ -1,0 +1,49 @@
+body{
+  background: url(imagenes/musica1.webp) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ color: rgb(0, 0, 0);
+}
+.box{
+  background-color: #ff00002c;
+  height: 90px;
+  width: 290px;
+  border-radius: 10px;
+    border: 1px solid;
+}
+.button {
+  display: inline-block;
+  padding: 5px 25px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #389ca0;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.imagen1{
+  padding: 50px;
+  height: 250px;
+}
+#visitas{
+  background-color: #f8e9e900;
+  text-align: center;
+  border: 1px solid;
+  height: 30px;
+  width: 100px;
+}
